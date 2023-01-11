@@ -3,7 +3,7 @@ export default {
   name: "AppHeader",
   data() {
     return {
-      logo: "src/assets/img/dc-logo.png",
+      logo: "/src/assets/img/dc-logo.png",
       nav: [
         {
           label: "Characters",
