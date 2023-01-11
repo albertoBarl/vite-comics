@@ -1,4 +1,4 @@
-<script>
+<script scoped>
 export default {
   name: "AppHeader",
   data() {
@@ -66,14 +66,13 @@ export default {
     </div>
   </header>
 </template>
-<style lang="scss">
+<style scoped lang="scss">
 @use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 ul {
   list-style: none;
   li a {
-    text-transform: uppercase;
-    font-size: medium;
-    text-decoration: none;
+    @include a-pers;
     color: $dark-color;
     &:hover {
       color: $pointed-one;
