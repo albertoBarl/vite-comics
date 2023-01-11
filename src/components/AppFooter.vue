@@ -25,6 +25,50 @@ export default {
           label: "dc power visa",
         },
       ],
+      sections: [
+        {
+          label: "dc comics",
+          links: [
+            "Characters",
+            "Comics",
+            "Movies",
+            "TV",
+            "Games",
+            "Videos",
+            "News",
+          ],
+        },
+        {
+          label: "shop",
+          links: ["Shop DC", "Shop DC Collectibles"],
+        },
+        {
+          label: "dc",
+          links: [
+            "Terms Of Use",
+            "Privacy policy (New)",
+            "Ad Choices",
+            "Advertising",
+            "Jobs",
+            "Subscriptions",
+            "Talent Workshops",
+            "CPSC Certificates",
+            "Ratings",
+            "Shop Help",
+            "Contact Us",
+          ],
+        },
+        {
+          label: "sites",
+          links: [
+            "DC",
+            "MAD Magazine",
+            "DC Kids",
+            "DC Universe",
+            "DC Power Visa",
+          ],
+        },
+      ],
     };
   },
 };
@@ -49,7 +93,14 @@ export default {
     </div>
   </header>
   <footer>
-    <div></div>
+    <div class="container text-white">
+      <div v-for="(element, index) in sections">
+        <h4>{{ sections[index].label }}</h4>
+        <ul v-for="(element, index) in sections[index].links">
+          <li>{{ element }}</li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </template>
 <style scoped lang="scss">

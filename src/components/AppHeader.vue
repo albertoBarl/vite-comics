@@ -54,7 +54,9 @@ export default {
   <header class="container">
     <div class="row d-flex align-items-center my-3">
       <!-- LOGO -->
-      <div class="col-3"><img :src="logo" alt="not available" /></div>
+      <div class="col-3">
+        <a href="/"><img :src="logo" alt="not available" /></a>
+      </div>
       <!-- NAVBAR -->
       <nav class="col-9 pt-3">
         <ul class="d-flex justify-content-between">
