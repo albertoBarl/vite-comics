@@ -12,4 +12,4 @@ export default {
   <AppHeader />
   <AppFooter />
 </template>
-<style lang=""></style>
+<style lang="sass"></style>
