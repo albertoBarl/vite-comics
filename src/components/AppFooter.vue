@@ -97,7 +97,9 @@ export default {
       <div v-for="(element, index) in sections">
         <h4>{{ sections[index].label }}</h4>
         <ul v-for="(element, index) in sections[index].links">
-          <li>{{ element }}</li>
+          <li>
+            <a href="">{{ element }}</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -118,6 +120,18 @@ header {
       color: $clear-color;
 
       @include a-pers;
+    }
+  }
+}
+footer {
+  h4 {
+    text-transform: uppercase;
+  }
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: gray;
     }
   }
 }
