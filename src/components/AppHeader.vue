@@ -62,4 +62,8 @@ export default {
     </nav>
   </header>
 </template>
-<style lang="sass"></style>
+<style lang="scss">
+ul {
+  list-style-type: none;
+}
+</style>

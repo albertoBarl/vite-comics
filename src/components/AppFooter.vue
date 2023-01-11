@@ -4,4 +4,4 @@ export default {
 };
 </script>
 <template lang="">prova</template>
-<style lang="sass"></style>
+<style lang="scss"></style>
