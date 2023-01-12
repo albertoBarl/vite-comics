@@ -69,10 +69,33 @@ export default {
           ],
         },
       ],
+      socials: [
+        {
+          name: "Facebook",
+          logo: "footer-facebook.png",
+        },
+        {
+          name: "Twitter",
+          logo: "footer-twitter.png",
+        },
+        {
+          name: "YouTube",
+          logo: "footer-youtube.png",
+        },
+        {
+          name: "Pinterest",
+          logo: "footer-pinterest.png",
+        },
+        {
+          name: "Periscope",
+          logo: "footer-periscope.png",
+        },
+      ],
     };
   },
 };
 </script>
+
 <template lang="">
   <header>
     <div class="container">
@@ -107,7 +130,31 @@ export default {
       <img src="../assets/img/dc-logo-bg.png" alt="not available" />
     </div>
   </footer>
+  <div class="deepbottom" style="height: 100px">
+    <div class="container" style="height: 100%">
+      <div class="row d-flex align-items-center" style="height: 100%">
+        <div class="col-6"><button>SIGN-UP NOW</button></div>
+        <div class="col-6 d-flex align-items-center py-3" style="height: 100%">
+          <h4 class="me-4">FOLLOW US</h4>
+          <div
+            v-for="(element, index) in socials"
+            :key="index"
+            class="mx-2 pb-1"
+          >
+            <a href="#">
+              <img
+                :src="`src/assets/img/${socials[index].logo}`"
+                alt="not available"
+                style="height: 100%"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
 <style scoped lang="scss">
 @use "../styles/partials/variables" as *;
 @use "../styles/partials/mixins" as *;
@@ -152,5 +199,13 @@ footer {
       }
     }
   }
+}
+div.col-6 {
+  h4 {
+    color: $pointed-one;
+  }
+}
+.deepbottom {
+  background-color: $dark-color;
 }
 </style>
