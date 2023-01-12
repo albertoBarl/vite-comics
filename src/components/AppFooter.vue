@@ -86,19 +86,19 @@ export default {
         >
           <img :src="foothead[index].logo" alt="not available" />
           <span class="ms-2"
-            ><a href="/">{{ foothead[index].label }}</a></span
+            ><a href="#">{{ foothead[index].label }}</a></span
           >
         </div>
       </div>
     </div>
   </header>
   <footer>
-    <div class="text-white d-flex justify-content-between">
-      <div v-for="(element, index) in sections">
+    <div class="container text-white d-flex flex-column flex-wrap">
+      <div v-for="(element, index) in sections" class="my-3">
         <h4>{{ sections[index].label }}</h4>
         <ul v-for="(element, index) in sections[index].links">
           <li>
-            <a href="">{{ element }}</a>
+            <a href="#">{{ element }}</a>
           </li>
         </ul>
       </div>
@@ -127,19 +127,21 @@ footer {
   background-image: url("../assets/img/footer-bg.jpg");
   background-size: cover;
   div {
-    width: 40%;
+    max-width: max-content;
     max-height: 600px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     h4 {
       text-transform: uppercase;
     }
     ul {
-      list-style: none;
-      a {
-        text-decoration: none;
-        color: gray;
+      li {
+        list-style-type: none;
+        transform: translateX(-2em);
+        a {
+          text-decoration: none;
+          color: gray;
+        }
       }
     }
   }

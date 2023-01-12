@@ -59,9 +59,9 @@ export default {
       </div>
       <!-- NAVBAR -->
       <nav class="col-9 pt-3">
-        <ul class="d-flex justify-content-between">
+        <ul class="d-flex justify-content-between pt-4">
           <li v-for="(element, index) in nav">
-            <a href="/">{{ nav[index].label }}</a>
+            <a href="#">{{ nav[index].label }}</a>
           </li>
         </ul>
       </nav>
@@ -71,13 +71,31 @@ export default {
 <style scoped lang="scss">
 @use "../styles/partials/variables" as *;
 @use "../styles/partials/mixins" as *;
-ul {
-  list-style: none;
-  li a {
-    @include a-pers;
-    color: $dark-color;
-    &:hover {
-      color: $pointed-one;
+
+header {
+  height: 125px;
+  div {
+    height: 100%;
+    nav {
+      height: 100%;
+      ul {
+        list-style: none;
+        height: 80%;
+        li {
+          height: 100%;
+          &:hover {
+            color: $pointed-one;
+            border-bottom: 3px solid $pointed-one;
+          }
+          a {
+            @include a-pers;
+            color: $dark-color;
+            &:hover {
+              color: $pointed-one;
+            }
+          }
+        }
+      }
     }
   }
 }
