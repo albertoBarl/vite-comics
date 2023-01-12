@@ -1,16 +1,16 @@
 <script>
 import AppCard from "../components/elements/AppCard.vue";
-import Cards from "../assets/datas/dataSeries.js";
+import series from "../assets/datas/dataSeries.js";
 
 export default {
   name: "AppMain",
   components: {
     AppCard,
-    Cards,
+    series,
   },
   data() {
     return {
-      seriesCard: Cards,
+      seriesCard: series,
     };
   },
 };

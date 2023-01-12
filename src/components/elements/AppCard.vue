@@ -4,14 +4,15 @@ export default {
 };
 </script>
 <template lang="">
-  <div class="card">
+  <div class="card bg-transparent text-white border-0">
     <img :src="dcSeries.thumb" alt="not available" />
-    <span>{{ dcSeries.series }}</span>
+    <p class="mt-2">{{ dcSeries.series }}</p>
   </div>
 </template>
 <style lang="scss">
 div.card {
   width: 150px;
   height: auto;
+  cursor: pointer;
 }
 </style>
