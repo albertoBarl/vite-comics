@@ -19,7 +19,7 @@ export default {
   <div class="jumbos"></div>
   <div class="bg-dark">
     <div
-      class="container d-flex justify-content-center flex-wrap gap-5 pt-5 pb-3 position-relative"
+      class="container d-flex justify-content-center flex-wrap gap-5 p-5 pb-3 position-relative"
     >
       <h5 class="mysection">CURRENT SERIES</h5>
       <AppCard

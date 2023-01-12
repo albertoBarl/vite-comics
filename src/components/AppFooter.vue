@@ -133,7 +133,7 @@ export default {
   <div class="deepbottom" style="height: 100px">
     <div class="container" style="height: 100%">
       <div class="row d-flex align-items-center" style="height: 100%">
-        <div class="col-6"><button>SIGN-UP NOW</button></div>
+        <div class="col-6"><button class="mybtn">SIGN-UP NOW</button></div>
         <div class="col-6 d-flex align-items-center py-3" style="height: 100%">
           <h4 class="me-4">FOLLOW US</h4>
           <div
@@ -207,5 +207,11 @@ div.col-6 {
 }
 .deepbottom {
   background-color: $dark-color;
+}
+.mybtn {
+  border: 1px solid $pointed-one;
+  background: none;
+  padding: 10px 30px;
+  color: white;
 }
 </style>
