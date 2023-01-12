@@ -92,8 +92,8 @@ export default {
       </div>
     </div>
   </header>
-  <footer>
-    <div class="container text-white d-flex flex-column flex-wrap">
+  <footer class="d-flex justify-content-around">
+    <div class="text-white d-flex flex-column flex-wrap">
       <div v-for="(element, index) in sections" class="my-3">
         <h4>{{ sections[index].label }}</h4>
         <ul v-for="(element, index) in sections[index].links">
@@ -102,6 +102,9 @@ export default {
           </li>
         </ul>
       </div>
+    </div>
+    <div class="dx">
+      <img src="../assets/img/dc-logo-bg.png" alt="not available" />
     </div>
   </footer>
 </template>
@@ -126,11 +129,12 @@ header {
 footer {
   background-image: url("../assets/img/footer-bg.jpg");
   background-size: cover;
-  div {
+  div.text-white {
     max-width: max-content;
     max-height: 600px;
     display: flex;
     flex-direction: column;
+    z-index: 1;
     h4 {
       text-transform: uppercase;
     }
