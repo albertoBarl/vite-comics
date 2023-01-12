@@ -17,16 +17,26 @@ export default {
 </script>
 <template lang="">
   <div class="bg-dark">
-    <div class="container d-flex flex-wrap gap-5 p-5">
+    <div
+      class="container d-flex justify-content-center flex-wrap gap-5 pt-5 pb-3"
+    >
       <AppCard
         v-for="(elem, index) in seriesCard"
         :key="index"
         :dcSeries="elem"
       />
+      <button class="mybtn">LOAD MORE</button>
     </div>
   </div>
 </template>
 <style lang="scss">
 @use "../styles/partials/variables" as *;
 @use "../styles/partials/mixins" as *;
+
+.mybtn {
+  background-color: $pointed-one;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+}
 </style>
