@@ -145,6 +145,9 @@ footer {
         a {
           text-decoration: none;
           color: gray;
+          &:hover {
+            color: $pointed-one;
+          }
         }
       }
     }
