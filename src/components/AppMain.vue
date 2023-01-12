@@ -16,10 +16,12 @@ export default {
 };
 </script>
 <template lang="">
+  <div class="jumbos"></div>
   <div class="bg-dark">
     <div
-      class="container d-flex justify-content-center flex-wrap gap-5 pt-5 pb-3"
+      class="container d-flex justify-content-center flex-wrap gap-5 pt-5 pb-3 position-relative"
     >
+      <h5 class="mysection">CURRENT SERIES</h5>
       <AppCard
         v-for="(elem, index) in seriesCard"
         :key="index"
@@ -32,6 +34,22 @@ export default {
 <style lang="scss">
 @use "../styles/partials/variables" as *;
 @use "../styles/partials/mixins" as *;
+
+.jumbos {
+  height: 300px;
+  background-image: url("../assets/img/jumbotron.jpg");
+  background-size: cover;
+}
+
+.mysection {
+  background-color: $pointed-one;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: -23px;
+  left: 50px;
+}
 
 .mybtn {
   background-color: $pointed-one;
