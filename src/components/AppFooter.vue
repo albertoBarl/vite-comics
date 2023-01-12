@@ -93,7 +93,7 @@ export default {
     </div>
   </header>
   <footer>
-    <div class="container text-white">
+    <div class="text-white d-flex justify-content-between">
       <div v-for="(element, index) in sections">
         <h4>{{ sections[index].label }}</h4>
         <ul v-for="(element, index) in sections[index].links">
@@ -124,14 +124,23 @@ header {
   }
 }
 footer {
-  h4 {
-    text-transform: uppercase;
-  }
-  ul {
-    list-style: none;
-    a {
-      text-decoration: none;
-      color: gray;
+  background-image: url("../assets/img/footer-bg.jpg");
+  background-size: cover;
+  div {
+    width: 40%;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    h4 {
+      text-transform: uppercase;
+    }
+    ul {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: gray;
+      }
     }
   }
 }
