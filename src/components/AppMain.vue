@@ -16,7 +16,9 @@ export default {
 };
 </script>
 <template lang="">
+  <!-- jumbotron -->
   <div class="jumbos"></div>
+  <!-- series section -->
   <div class="bg-dark">
     <div
       class="container d-flex justify-content-center flex-wrap gap-5 p-5 pb-3 position-relative"

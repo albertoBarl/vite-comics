@@ -97,6 +97,7 @@ export default {
 </script>
 
 <template lang="">
+  <!-- blue section -->
   <header>
     <div class="container">
       <div
@@ -115,6 +116,7 @@ export default {
       </div>
     </div>
   </header>
+  <!-- nav footer -->
   <footer class="d-flex justify-content-around">
     <div class="text-white d-flex flex-column flex-wrap">
       <div v-for="(element, index) in sections" class="my-3">
@@ -126,6 +128,7 @@ export default {
         </ul>
       </div>
     </div>
+    <!-- socials -->
     <div class="dx">
       <img src="../assets/img/dc-logo-bg.png" alt="not available" />
     </div>
